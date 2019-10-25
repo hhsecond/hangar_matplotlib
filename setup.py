@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="hangar_matplotlib",
-    version="0.0.1",
+    version="0.1.0",
     author="hhsecond",
     author_email="sherin@tensorwerk.com",
     description="Matplotlib plugin for hangar",
@@ -20,5 +20,5 @@ setuptools.setup(
     ],
     python_requires='>=3.6',
     install_requires=['matplotlib'],
-    entry_points={'hangar.external.plugins': 'matplotlib = hangar_pil:HangarMatplotlib'}
+    entry_points={'hangar.external.plugins': 'matplotlib = hangar_matplotlib:HangarMatplotlib'}
 )

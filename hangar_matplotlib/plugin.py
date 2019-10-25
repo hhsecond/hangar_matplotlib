@@ -166,11 +166,11 @@ def _get_display_range(image):  # pragma: no cover
 
 class HangarMatplotlib(BasePlugin):
     def __init__(self):
-        provides = ['load', 'save', 'board_show']
+        provides = ['show']
         accepts = ['jpg', 'jpeg', 'png', 'ppm', 'bmp', 'pgm', 'tif', 'tiff', 'webp']
         super().__init__(provides, accepts)
 
-    def show(image, ax=None, show_cbar=None, **kwargs):
+    def show(self, image, ax=None, show_cbar=None, **kwargs):
         """Show the input image and return the current axes.
 
         By default, the image is displayed in greyscale, rather than
